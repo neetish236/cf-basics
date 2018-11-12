@@ -1,0 +1,20 @@
+{
+“AWSTemplateFormatVersion” : “2010-09-09”,
+“Description” : “Single Instance”,
+“Resources” : {
+“Web1” : {
+“Type” : “AWS::EC2::Instance”,
+“Properties” : {
+“ImageID” : “ami-08111162”,
+“SecurityGroups” : “mysg”,
+“KeyName” : “Jenkins “,
+“Tags “ : [
+{
+“Key” : “Name”,
+“Value” : “Web1”
+}
+]
+}
+}
+}
+}
